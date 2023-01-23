@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+}
+
+body{
+    background: radial-gradient(#B9F3FC, #FEDEFF);
+    color: black;
+}
+
+.title{
+    text-transform: uppercase;
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: royalblue;
+}
+
+.gameContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameContainerSquare{
+    height: 550px;
+    width: 550px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-gap: 3px;
+    margin-top: 40px;
+}
+
+.gameSquare{
+    border: solid black;
+    border-width: 3px;
+    display: flex;
+}
+
+.squareShown{
+    width: 100%;
+    height: 100%;
+    background-color: #B9F3FC;
+    z-index: 1200;
+    transition: 0.5s;
+}
+
+.squareHidden{
+    width: 100%;
+    height: 100%;
+    background-color: #93C6E7;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1100;
+    transition: 0.5s;
+}
+
+.optionChosen{
+    display: flex;
+    justify-content: center;
+}
+
+#choose-x{
+    z-index: 4;
+    position: absolute;
+    font-size: 100px;
+    color: white;
+}
+
+#choose-o{
+    z-index: 5;
+    position: absolute;
+    font-size: 100px;
+    color: white;
+}
